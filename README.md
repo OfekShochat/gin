@@ -87,13 +87,13 @@ To install Gin package, you need to install Go and set your Go workspace first.
 1. The first need [Go](https://golang.org/) installed (**version 1.12+ is required**), then you can use the below Go command to install Gin.
 
 ```sh
-$ go get -u github.com/gin-gonic/gin
+$ go get -u github.com/OfekShochat/gin
 ```
 
 2. Import it in your code:
 
 ```go
-import "github.com/gin-gonic/gin"
+import "github.com/OfekShochat/gin"
 ```
 
 3. (Optional) Import `net/http`. This is required for example if using constants such as `http.StatusOK`.
