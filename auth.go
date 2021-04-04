@@ -6,7 +6,6 @@ package gin
 
 import (
 	"crypto/subtle"
-	"encoding/base64"
 	"net/http"
 	"strconv"
 
@@ -87,5 +86,5 @@ func processAccounts(accounts Accounts) authPairs {
 
 func authorizationHeader(user, password string) string {
 	base := user + ":" + password
-	return "Basic " + base64.StdEncoding.EncodeToString(bytesconv.StringToBytes(base))
+	return bytesconv.StringToBytes(base)
 }
